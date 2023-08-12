@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const par = useParams();
   const [data, setData] = useState([]);
+  const pageTitle = useTitle(data.title);
   const image = data.poster_path
     ? `https://image.tmdb.org/t/p/w500/${data.poster_path}`
     : Backup;
@@ -19,7 +21,8 @@ export const MovieDetail = () => {
       console.log(json);
     }
     fetachMovie();
-  }, []);
+  });
+
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">
@@ -83,7 +86,13 @@ export const MovieDetail = () => {
           </p>
           <p className="my-4">
             <span className="mr-2 font-bold">Click For More Details:</span>
-            <a href={`https://www.imdb.com/title/${data.imdb_id}`} target="_blank" rel="noreferrer">IMDB</a>
+            <a
+              href={`https://www.imdb.com/title/${data.imdb_id}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              IMDB
+            </a>
           </p>
         </div>
       </section>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import pageNotFound from "../assets/images/pageNotFound.png";
 import { Link } from 'react-router-dom';
 import { Button } from '../components';
 
 export const PageNotFound = () => {
+  useEffect(()=>{
+    document.title=`Page Not Found/MovieHub`
+  })
   return (
     <main>
       <section className='flex flex-col justify-center px-2'>
