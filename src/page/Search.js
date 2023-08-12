@@ -3,6 +3,7 @@ import { Card } from "../components";
 import { useFetch } from "../hooks/useFetch";
 import { useSearchParams } from "react-router-dom";
 import { useTitle } from "../hooks/useTitle";
+import pageNotFound from "../assets/images/pageNotFound.png";
 
 export const Search = ({ apiPath }) => {
   const [searchParams] = useSearchParams();
@@ -14,7 +15,6 @@ export const Search = ({ apiPath }) => {
     <main>
       <section className="py-7">
         <p className="text-3xl text-gray-700 dark:text-white">
-          {" "}
           {movies.length === 0
             ? `Nothing To Show For '${queryTerm}'`
             : `Results For '${queryTerm}'`}

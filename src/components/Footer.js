@@ -23,22 +23,22 @@ export const Footer = () => {
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="/" target="_blank" className="mr-4 hover:underline md:mr-6 ">
+              <a href="https://www.facebook.com/muhammadjahidhasanjitu.cse" target="_blank" rel="noreferrer" className="mr-4 hover:underline md:mr-6 ">
                 FaceBook
               </a>
             </li>
             <li>
-              <a href="/"target="_blank" className="mr-4 hover:underline md:mr-6">
+              <a href="https:mobile.twitter.com/muhammad_jahid?lang=bg"target="_blank" rel="noreferrer" className="mr-4 hover:underline md:mr-6">
                 Twitter
               </a>
             </li>
             <li>
-              <a href="/" target="_blank" className="mr-4 hover:underline md:mr-6 ">
+              <a href="https://www.linkdin.com/in/md-jahid-hasan-jitu-a94a2730" target="_blank" rel="noreferrer" className="mr-4 hover:underline md:mr-6 ">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="/" target="_blank" className="hover:underline">
+              <a href="https://github.com/jahidjitu-cse" target="_blank" rel="noreferrer" className="hover:underline">
                 GitHub
               </a>
             </li>
